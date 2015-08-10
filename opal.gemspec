@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'opal/version'
 
 Gem::Specification.new do |s|
-  s.name         = 'opal'
+  s.name         = 'opal-wedge'
   s.version      = Opal::VERSION
   s.author       = 'Adam Beynon'
   s.email        = 'adam.beynon@gmail.com'
@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.3'
 
   s.add_dependency 'sourcemap', '~> 0.1.0'
-  s.add_dependency 'sprockets', '~> 3.1'
+  s.add_dependency 'sprockets', '>= 2'
   s.add_dependency 'hike', '~> 1.2'
   s.add_dependency 'tilt', '>= 1.4'
 
